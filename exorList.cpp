@@ -129,7 +129,7 @@ int IteratorCubePairNext();
 
 // cube storage allocation/deallocation
 int AllocateCubeSets( int nVarsIn, int nVarsOut );
-void deallocateCubeSets();
+void DeallocateCubeSets();
 
 // insert/extract a cube into/from the storage
 void CubeInsert( Cube* p );
@@ -148,7 +148,7 @@ Cube* IterCubeSetNext();
 
 // adjacency queque allocation/deallocation procedures
 int AllocateQueques( int nPlaces );
-void deallocateQueques();
+void DeallocateQueques();
 
 // conditional adding cube pairs to queques
 // reset temporarily stored new range of cube pairs
