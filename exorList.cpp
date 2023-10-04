@@ -127,7 +127,7 @@ int IteratorCubePairNext();
 ////////////////////////////////////////////////////////////////////////
 // the cube storage
 
-// cube storage allocation/delocation
+// cube storage allocation/deallocation
 int AllocateCubeSets( int nVarsIn, int nVarsOut );
 void DelocateCubeSets();
 
@@ -146,7 +146,7 @@ Cube* IterCubeSetNext();
 ////////////////////////////////////////////////////////////////////////
 // cube adjacency queques
 
-// adjacency queque allocation/delocation procedures
+// adjacency queque allocation/deallocation procedures
 int AllocateQueques( int nPlaces );
 void DelocateQueques();
 
@@ -786,7 +786,7 @@ void UndoRecentChanges()
 //static Cube* s_List;
 
 ///////////////////////////////////////////////////////////////////
-///                 Memory Allocation/Delocation                ///
+///                 Memory Allocation/deallocation                ///
 ///////////////////////////////////////////////////////////////////
 
 int AllocateCubeSets( int nVarsIn, int nVarsOut )
@@ -1106,7 +1106,7 @@ int IteratorCubePairNext()
 }
 
 //////////////////////////////////////////////////////////////////////
-//                     Allocation/Delocation                        //
+//                     Allocation/deallocation                        //
 //////////////////////////////////////////////////////////////////////
 
 int AllocateQueques( int nPlaces )
