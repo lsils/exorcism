@@ -129,7 +129,7 @@ int IteratorCubePairNext();
 
 // cube storage allocation/deallocation
 int AllocateCubeSets( int nVarsIn, int nVarsOut );
-void DelocateCubeSets();
+void DeallocateCubeSets();
 
 // insert/extract a cube into/from the storage
 void CubeInsert( Cube* p );
@@ -148,7 +148,7 @@ Cube* IterCubeSetNext();
 
 // adjacency queque allocation/deallocation procedures
 int AllocateQueques( int nPlaces );
-void DelocateQueques();
+void DeallocateQueques();
 
 // conditional adding cube pairs to queques
 // reset temporarily stored new range of cube pairs
@@ -813,7 +813,7 @@ int AllocateCubeSets( int nVarsIn, int nVarsOut )
     return 4;
 }
 
-void DelocateCubeSets()
+void DeallocateCubeSets()
 {
 }
 
@@ -1136,7 +1136,7 @@ int AllocateQueques( int nPlaces )
     return nPlaces * (sizeof(Cube*) + sizeof(Cube*) + 2*sizeof(byte) );
 }
 
-void DelocateQueques()
+void DeallocateQueques()
 {
     int i;
     for ( i = 0; i < 3; i++ )
